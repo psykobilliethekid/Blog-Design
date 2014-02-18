@@ -2,4 +2,4 @@ This is a simple blog layout I created using HTML5 and SASS. The entirety of the
 
 The Menu and the Recent Posts have a simple hover state at the moment. I would like to change up the font and the layout a little more. I would also like to add in a search bar above the menu and footer below the content. 
 
-A live version of the site can be viewed here: 
+A live version of the site can be viewed here: http://psykobilliethekid.github.io/Blog-Design/
