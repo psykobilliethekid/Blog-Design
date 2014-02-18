@@ -1,0 +1,122 @@
+@import url(http://fonts.googleapis.com/css?family=Titan+One);
+@import "partials/base";
+@import "h5bp";
+@include h5bp-normalize;
+@import "partials/overrides";
+@import "partials/fonts";
+@import "partials/page";
+@include h5bp-helpers;
+@import "partials/media";
+
+body {
+	background-color: #9370db;
+    background-image: url('../images/background.png');  
+    margin: 0 460px;
+}
+
+@mixin column-style{
+    border: 10px double #8A2BE2;
+    border-radius: 24px;
+    padding: 5px;
+    color: #000;
+    background-color: #9370DB;
+    box-shadow: 3px 5px 6px #000000;
+    font:{
+            size: 13px;
+            family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+            weight: strong; 
+        }
+      
+}
+
+
+/*Variables*/
+$list-style: none;
+$text-align: left;
+$padding: 5px 0 20px 25px;
+$line-height: 25px;
+
+/*Sass*/
+#container{
+    margin: 100px 0;
+}
+
+header{
+    font: {
+        family: 'Titan One', cursive;
+        size: 72px;
+        weight: bold;
+
+    }
+}
+
+#posts{
+    @include column-style;
+    float: left;
+    width: 480px;
+    height: 720px;
+    position: relative;
+    word-wrap:normal;    
+}
+
+h1 a{
+	text-decoration: none;
+    	color: #000;
+    		&:hover{
+    			text-shadow: 0px 0px 7px rgba(255, 10, 10, 0.75);
+    		}
+}
+
+#post-date{
+    margin: 0 20px 5px 325px;
+    font-weight: bold;
+}
+
+#menu{
+    @include column-style;
+    float: right;
+    width: 120px;
+    height: 120px;
+    ul{
+        list-style: $list-style;
+        text-align: $text-align;
+        padding: $padding;
+        font-size:16px;
+        font-weight: bold;
+        line-height: $line-height;
+      }
+
+    li a{
+    	text-decoration: none;
+    	color: #000;
+    	&:hover{
+    			text-shadow: 0px 0px 7px rgba(255, 10, 10, 0.75);
+    		}
+    }  
+}
+
+#recent-posts{
+    @include column-style;
+    float: right;
+    width: 120px;
+    height: 565px;
+    margin: 5px 0 0 0;
+     ul{
+        list-style: $list-style;
+        text-align: $text-align;
+        padding: $padding;
+        font-size:16px;
+        font-weight: bold;
+        line-height: $line-height;
+      }
+
+      li a{
+    	text-decoration: none;
+    	color: #000;
+    		&:hover{
+    			text-shadow: 0px 0px 7px rgba(255, 10, 10, 0.75);
+    		}
+    		
+    }  
+}
+
