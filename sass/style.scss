@@ -29,6 +29,23 @@ body {
       
 }
 
+@mixin highlight{
+    text-decoration: none;
+    color:#FFFFFF;
+    font:{    
+        weight: bold;    
+    }
+    padding: 5px 10px; 
+    background: #9c3;
+    border-radius: 15px;
+    &:hover{
+            background: #E8E8E8 ;
+            color:#000;
+            opacity: 0.60;
+            transition: background 0.3s ease-in-out;
+        }
+}
+
 
 /*Variables*/
 $list-style: none;
@@ -50,6 +67,30 @@ header{
     }
 }
 
+#search{  
+    float: right; 
+    margin-bottom: 10px;
+}
+
+#textbox{
+    @include column-style;
+}
+
+#search-button{
+    padding: 8px 15px;
+    font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+    font-weight: bold;
+    line-height: 1;
+    color: #000;
+    border: 2px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 6px #000000;
+    background: linear-gradient(0deg, rgb(160, 160, 160) 30%, rgb(177, 140, 255) 100%);
+    &:hover{
+        box-shadow: 7px 7px 14px 0px #8A2BE2;
+    }
+}
+
 #posts{
     @include column-style;
     float: left;
@@ -59,11 +100,17 @@ header{
     word-wrap:normal;    
 }
 
+header{
+    width: 400px;
+    height: 30px;
+}
+
 h1 a{
 	text-decoration: none;
     	color: #000;
     		&:hover{
-    			text-shadow: 0px 0px 7px rgba(255, 10, 10, 0.75);
+    			//text-shadow: 0px 0px 7px rgba(255, 10, 10, 0.75);
+                @include highlight;
     		}
 }
 
@@ -90,7 +137,8 @@ h1 a{
     	text-decoration: none;
     	color: #000;
     	&:hover{
-    			text-shadow: 0px 0px 7px rgba(255, 10, 10, 0.75);
+    			//text-shadow: 0px 0px 7px rgba(255, 10, 10, 0.75);
+                @include highlight;
     		}
     }  
 }
@@ -114,9 +162,22 @@ h1 a{
     	text-decoration: none;
     	color: #000;
     		&:hover{
-    			text-shadow: 0px 0px 7px rgba(255, 10, 10, 0.75);
+    			//text-shadow: 0px 0px 7px rgba(255, 10, 10, 0.75);
+                @include highlight;
     		}
     		
     }  
+}
+
+footer{
+    @include column-style;
+    width: 633px;
+    height: 10px;
+    float:none;
+    clear:both;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+
 }
 
