@@ -837,19 +837,55 @@ body {
 
 /*Variables*/
 /*Sass*/
-/* line 40, ../sass/style.scss */
+/* line 57, ../sass/style.scss */
 #container {
   margin: 100px 0;
 }
 
-/* line 44, ../sass/style.scss */
+/* line 61, ../sass/style.scss */
 header {
   font-family: 'Titan One', cursive;
   font-size: 72px;
   font-weight: bold;
 }
 
-/* line 53, ../sass/style.scss */
+/* line 70, ../sass/style.scss */
+#search {
+  float: right;
+  margin-bottom: 10px;
+}
+
+/* line 75, ../sass/style.scss */
+#textbox {
+  border: 10px double #8A2BE2;
+  border-radius: 24px;
+  padding: 5px;
+  color: #000;
+  background-color: #9370DB;
+  box-shadow: 3px 5px 6px #000000;
+  font-size: 13px;
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+  font-weight: strong;
+}
+
+/* line 79, ../sass/style.scss */
+#search-button {
+  padding: 8px 15px;
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+  font-weight: bold;
+  line-height: 1;
+  color: #000;
+  border: 2px;
+  border-radius: 10px;
+  box-shadow: 3px 5px 6px #000000;
+  background: linear-gradient(0deg, #a0a0a0 30%, #b18cff 100%);
+}
+/* line 89, ../sass/style.scss */
+#search-button:hover {
+  box-shadow: 7px 7px 14px 0px #8A2BE2;
+}
+
+/* line 94, ../sass/style.scss */
 #posts {
   border: 10px double #8A2BE2;
   border-radius: 24px;
@@ -867,23 +903,41 @@ header {
   word-wrap: normal;
 }
 
-/* line 62, ../sass/style.scss */
+/* line 103, ../sass/style.scss */
+header {
+  width: 400px;
+  height: 30px;
+}
+
+/* line 108, ../sass/style.scss */
 h1 a {
   text-decoration: none;
   color: #000;
 }
-/* line 65, ../sass/style.scss */
+/* line 111, ../sass/style.scss */
 h1 a:hover {
-  text-shadow: 0px 0px 7px rgba(255, 10, 10, 0.75);
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: bold;
+  padding: 5px 10px;
+  background: #9c3;
+  border-radius: 15px;
+}
+/* line 41, ../sass/style.scss */
+h1 a:hover:hover {
+  background: #e8e8e8;
+  color: #000;
+  opacity: 0.60;
+  transition: background 0.3s ease-in-out;
 }
 
-/* line 70, ../sass/style.scss */
+/* line 117, ../sass/style.scss */
 #post-date {
   margin: 0 20px 5px 325px;
   font-weight: bold;
 }
 
-/* line 75, ../sass/style.scss */
+/* line 122, ../sass/style.scss */
 #menu {
   border: 10px double #8A2BE2;
   border-radius: 24px;
@@ -898,7 +952,7 @@ h1 a:hover {
   width: 120px;
   height: 120px;
 }
-/* line 80, ../sass/style.scss */
+/* line 127, ../sass/style.scss */
 #menu ul {
   list-style: none;
   text-align: left;
@@ -907,17 +961,29 @@ h1 a:hover {
   font-weight: bold;
   line-height: 25px;
 }
-/* line 89, ../sass/style.scss */
+/* line 136, ../sass/style.scss */
 #menu li a {
   text-decoration: none;
   color: #000;
 }
-/* line 92, ../sass/style.scss */
+/* line 139, ../sass/style.scss */
 #menu li a:hover {
-  text-shadow: 0px 0px 7px rgba(255, 10, 10, 0.75);
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: bold;
+  padding: 5px 10px;
+  background: #9c3;
+  border-radius: 15px;
+}
+/* line 41, ../sass/style.scss */
+#menu li a:hover:hover {
+  background: #e8e8e8;
+  color: #000;
+  opacity: 0.60;
+  transition: background 0.3s ease-in-out;
 }
 
-/* line 98, ../sass/style.scss */
+/* line 146, ../sass/style.scss */
 #recent-posts {
   border: 10px double #8A2BE2;
   border-radius: 24px;
@@ -933,7 +999,7 @@ h1 a:hover {
   height: 565px;
   margin: 5px 0 0 0;
 }
-/* line 104, ../sass/style.scss */
+/* line 152, ../sass/style.scss */
 #recent-posts ul {
   list-style: none;
   text-align: left;
@@ -942,12 +1008,44 @@ h1 a:hover {
   font-weight: bold;
   line-height: 25px;
 }
-/* line 113, ../sass/style.scss */
+/* line 161, ../sass/style.scss */
 #recent-posts li a {
   text-decoration: none;
   color: #000;
 }
-/* line 116, ../sass/style.scss */
+/* line 164, ../sass/style.scss */
 #recent-posts li a:hover {
-  text-shadow: 0px 0px 7px rgba(255, 10, 10, 0.75);
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: bold;
+  padding: 5px 10px;
+  background: #9c3;
+  border-radius: 15px;
+}
+/* line 41, ../sass/style.scss */
+#recent-posts li a:hover:hover {
+  background: #e8e8e8;
+  color: #000;
+  opacity: 0.60;
+  transition: background 0.3s ease-in-out;
+}
+
+/* line 172, ../sass/style.scss */
+footer {
+  border: 10px double #8A2BE2;
+  border-radius: 24px;
+  padding: 5px;
+  color: #000;
+  background-color: #9370DB;
+  box-shadow: 3px 5px 6px #000000;
+  font-size: 13px;
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+  font-weight: strong;
+  width: 633px;
+  height: 10px;
+  float: none;
+  clear: both;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
 }
