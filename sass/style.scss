@@ -11,7 +11,9 @@
 body {
 	background-color: #9370db;
     background-image: url('../images/background.png');  
-    margin: 0 460px;
+    margin: 0 460px ;
+    float: none;
+    clear: both;
 }
 
 @mixin column-style{
@@ -55,7 +57,7 @@ $line-height: 25px;
 
 /*Sass*/
 #container{
-    margin: 100px 0;
+    margin: 50px 0;
     float: none; 
     clear: both;
 }
@@ -186,7 +188,7 @@ h1 a{
 
 footer{
     @include column-style;
-    width: 633px;
+    width: 618px;
     height: 10px;
     float:none;
     clear:both;
