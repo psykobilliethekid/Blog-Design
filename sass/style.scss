@@ -56,6 +56,8 @@ $line-height: 25px;
 /*Sass*/
 #container{
     margin: 100px 0;
+    float: none; 
+    clear: both;
 }
 
 #header-block{
@@ -76,10 +78,12 @@ header{
 #sidebar{
     width: 150px;
     float:  right;
+    clear: none;
 }
 
 #search{  
     float: right; 
+    clear: none;
     margin-bottom: 10px;
 }
 
