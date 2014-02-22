@@ -58,6 +58,12 @@ $line-height: 25px;
     margin: 100px 0;
 }
 
+#header-block{
+    width: 633px;
+    float: none; 
+    clear: both;
+}
+
 header{
     font: {
         family: 'Titan One', cursive;
@@ -65,6 +71,11 @@ header{
         weight: bold;
 
     }
+}
+
+#sidebar{
+    width: 150px;
+    float:  right;
 }
 
 #search{  
