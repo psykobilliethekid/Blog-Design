@@ -537,3 +537,18 @@
 2014-02-22 19:46:37     error sass/style.scss (Line 88: Invalid CSS after "...inear-gradient:": expected pseudoclass or pseudoelement, was " (0deg, rgb(160...")
 2014-02-22 19:46:37 overwrite stylesheets/style.css 
 2014-02-22 19:47:05 overwrite stylesheets/style.css 
+2014-02-22 20:18:10 overwrite stylesheets/style.css 
+2014-02-22 20:18:27 overwrite stylesheets/style.css 
+2014-02-22 20:18:37 overwrite stylesheets/style.css 
+2014-02-22 20:19:32 overwrite stylesheets/style.css 
+2014-02-22 20:19:43 overwrite stylesheets/style.css 
+2014-02-22 20:20:03     error sass/style.scss (Line 152: Invalid CSS after "": expected selector_comma_sequence, was "")
+2014-02-22 20:20:03 overwrite stylesheets/style.css 
+2014-02-22 20:20:30 overwrite stylesheets/style.css 
+2014-02-22 20:20:44 overwrite stylesheets/style.css 
+2014-02-22 20:21:05 overwrite stylesheets/style.css 
+2014-02-22 20:21:41 overwrite stylesheets/style.css 
+2014-02-22 20:23:46 overwrite stylesheets/style.css 
+2014-02-22 20:24:32 overwrite stylesheets/style.css 
+2014-02-22 20:24:45 overwrite stylesheets/style.css 
+2014-02-22 20:25:03 overwrite stylesheets/style.css 
