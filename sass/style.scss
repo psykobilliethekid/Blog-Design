@@ -149,12 +149,18 @@ h1 a{
 
 #recent-posts{
     @include column-style;
+    p{
+        font-size: 15px;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
     ul{
         list-style: none;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: bold;
         text-align: left;
-        padding: 0px 5px;
+        padding: 0px 10px;
         line-height: 25px;
 
     }
