@@ -828,34 +828,39 @@ body, select, input, textarea {
 
   /* Style adjustments for print go here */
 }
-/* line 11, ../sass/style.scss */
+/* line 43, ../sass/style.scss */
 body {
   background-color: #9370db;
   background-image: url("../images/background.png");
-  margin: 0 460px;
 }
 
-/*Variables*/
-/*Sass*/
-/* line 57, ../sass/style.scss */
+/* line 51, ../sass/style.scss */
 #container {
-  margin: 100px 0;
+  height: 650px;
+  width: 832px;
+  clear: both;
+  float: none;
+  margin: auto;
 }
 
-/* line 61, ../sass/style.scss */
+/* line 59, ../sass/style.scss */
 header {
   font-family: 'Titan One', cursive;
   font-size: 72px;
   font-weight: bold;
+  float: left;
 }
 
-/* line 70, ../sass/style.scss */
-#search {
+/* line 68, ../sass/style.scss */
+#search-box {
+  clear: both;
   float: right;
-  margin-bottom: 10px;
+  height: 10px;
+  margin: auto;
+  width: 300px;
 }
 
-/* line 75, ../sass/style.scss */
+/* line 76, ../sass/style.scss */
 #textbox {
   border: 10px double #8A2BE2;
   border-radius: 24px;
@@ -866,23 +871,22 @@ header {
   font-size: 13px;
   font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
   font-weight: strong;
+  font-weight: bold;
 }
 
-/* line 79, ../sass/style.scss */
+/* line 81, ../sass/style.scss */
 #search-button {
   padding: 8px 15px;
   font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
   font-weight: bold;
-  line-height: 1;
-  color: #000;
   border: 2px;
   border-radius: 10px;
-  box-shadow: 3px 5px 6px #000000;
+  box-shadow: 3px 5px 6px #000;
   background: linear-gradient(0deg, #a0a0a0 30%, #b18cff 100%);
 }
 /* line 89, ../sass/style.scss */
 #search-button:hover {
-  box-shadow: 7px 7px 14px 0px #8A2BE2;
+  box-shadow: 7px 7px 14px 0px #8a2be2;
 }
 
 /* line 94, ../sass/style.scss */
@@ -896,34 +900,28 @@ header {
   font-size: 13px;
   font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
   font-weight: strong;
+  color: #000;
   float: left;
   width: 480px;
-  height: 720px;
-  position: relative;
-  word-wrap: normal;
+  padding: 10px;
 }
 
-/* line 103, ../sass/style.scss */
-header {
-  width: 400px;
-  height: 30px;
-}
-
-/* line 108, ../sass/style.scss */
+/* line 102, ../sass/style.scss */
 h1 a {
   text-decoration: none;
+  font-weight: bold;
   color: #000;
 }
-/* line 111, ../sass/style.scss */
+/* line 106, ../sass/style.scss */
 h1 a:hover {
   text-decoration: none;
   color: #FFFFFF;
   font-weight: bold;
-  padding: 5px 10px;
+  padding: 5px;
   background: #9c3;
   border-radius: 15px;
 }
-/* line 41, ../sass/style.scss */
+/* line 35, ../sass/style.scss */
 h1 a:hover:hover {
   background: #e8e8e8;
   color: #000;
@@ -931,13 +929,24 @@ h1 a:hover:hover {
   transition: background 0.3s ease-in-out;
 }
 
-/* line 117, ../sass/style.scss */
+/* line 111, ../sass/style.scss */
 #post-date {
-  margin: 0 20px 5px 325px;
+  font-style: italic;
   font-weight: bold;
+  float: right;
 }
 
-/* line 122, ../sass/style.scss */
+/* line 118, ../sass/style.scss */
+#sidebar {
+  float: left;
+  clear: right;
+  width: 125px;
+  margin-top: 50px;
+  margin-left: 15px;
+  padding: 15px;
+}
+
+/* line 127, ../sass/style.scss */
 #menu {
   border: 10px double #8A2BE2;
   border-radius: 24px;
@@ -948,34 +957,32 @@ h1 a:hover:hover {
   font-size: 13px;
   font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
   font-weight: strong;
-  float: right;
-  width: 120px;
-  height: 120px;
+  margin-bottom: 8px;
 }
-/* line 127, ../sass/style.scss */
+/* line 130, ../sass/style.scss */
 #menu ul {
   list-style: none;
-  text-align: left;
-  padding: 5px 0 20px 25px;
   font-size: 16px;
   font-weight: bold;
+  text-align: left;
+  padding: 10px 15px;
   line-height: 25px;
 }
-/* line 136, ../sass/style.scss */
-#menu li a {
-  text-decoration: none;
-  color: #000;
-}
 /* line 139, ../sass/style.scss */
+#menu li a {
+  color: #000;
+  text-decoration: none;
+}
+/* line 142, ../sass/style.scss */
 #menu li a:hover {
   text-decoration: none;
   color: #FFFFFF;
   font-weight: bold;
-  padding: 5px 10px;
+  padding: 5px;
   background: #9c3;
   border-radius: 15px;
 }
-/* line 41, ../sass/style.scss */
+/* line 35, ../sass/style.scss */
 #menu li a:hover:hover {
   background: #e8e8e8;
   color: #000;
@@ -983,7 +990,7 @@ h1 a:hover:hover {
   transition: background 0.3s ease-in-out;
 }
 
-/* line 146, ../sass/style.scss */
+/* line 150, ../sass/style.scss */
 #recent-posts {
   border: 10px double #8A2BE2;
   border-radius: 24px;
@@ -994,35 +1001,31 @@ h1 a:hover:hover {
   font-size: 13px;
   font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
   font-weight: strong;
-  float: right;
-  width: 120px;
-  height: 565px;
-  margin: 5px 0 0 0;
 }
 /* line 152, ../sass/style.scss */
 #recent-posts ul {
   list-style: none;
-  text-align: left;
-  padding: 5px 0 20px 25px;
   font-size: 16px;
   font-weight: bold;
+  text-align: left;
+  padding: 0px 5px;
   line-height: 25px;
 }
 /* line 161, ../sass/style.scss */
 #recent-posts li a {
-  text-decoration: none;
   color: #000;
+  text-decoration: none;
 }
 /* line 164, ../sass/style.scss */
 #recent-posts li a:hover {
   text-decoration: none;
   color: #FFFFFF;
   font-weight: bold;
-  padding: 5px 10px;
+  padding: 5px;
   background: #9c3;
   border-radius: 15px;
 }
-/* line 41, ../sass/style.scss */
+/* line 35, ../sass/style.scss */
 #recent-posts li a:hover:hover {
   background: #e8e8e8;
   color: #000;
@@ -1041,11 +1044,11 @@ footer {
   font-size: 13px;
   font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
   font-weight: strong;
-  width: 633px;
-  height: 10px;
-  float: none;
   clear: both;
+  float: none;
+  width: 480px;
+  height: 10px;
   font-weight: bold;
   text-align: center;
-  padding: 10px;
+  padding: 8px;
 }
