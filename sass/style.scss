@@ -8,14 +8,6 @@
 @include h5bp-helpers;
 @import "partials/media";
 
-body {
-	background-color: #9370db;
-    background-image: url('../images/background.png');  
-    margin: 0 460px ;
-    float: none;
-    clear: both;
-}
-
 @mixin column-style{
     border: 10px double #8A2BE2;
     border-radius: 24px;
@@ -37,7 +29,7 @@ body {
     font:{    
         weight: bold;    
     }
-    padding: 5px 10px; 
+    padding: 5px; 
     background: #9c3;
     border-radius: 15px;
     &:hover{
@@ -48,153 +40,142 @@ body {
         }
 }
 
-
-/*Variables*/
-$list-style: none;
-$text-align: left;
-$padding: 5px 0 20px 25px;
-$line-height: 25px;
-
-/*Sass*/
-#container{
-    margin: 50px 0;
-    float: none; 
-    clear: both;
+body{
+    background:{
+        color: #9370db;
+        image: url('../images/background.png');
+    }
+    
 }
 
-#header-block{
-    width: 633px;
-    float: none; 
+#container{
+    height: 650px;
+    width: 832px;
     clear: both;
+    float: none;
+    margin: auto;
 }
 
 header{
-    font: {
+    font:{
         family: 'Titan One', cursive;
         size: 72px;
         weight: bold;
-
     }
+    float: left;
 }
 
-#sidebar{
-    width: 150px;
-    float:  right;
-    clear: none;
-}
-
-#search{  
-    float: right; 
-    clear: none;
-    margin-bottom: 10px;
+#search-box{
+    clear: both;
+    float: right;
+    height: 10px;
+    margin: auto;
+    width: 300px;
 }
 
 #textbox{
     @include column-style;
+    font-weight: bold;
 }
 
 #search-button{
     padding: 8px 15px;
     font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
     font-weight: bold;
-    line-height: 1;
-    color: #000;
     border: 2px;
     border-radius: 10px;
-    box-shadow: 3px 5px 6px #000000;
-    background: linear-gradient(0deg, rgb(160, 160, 160) 30%, rgb(177, 140, 255) 100%);
+    box-shadow: 3px 5px 6px #000;
+    background:linear-gradient(0deg, rgb(160, 160, 160) 30%, rgb(177, 140, 255) 100%);
     &:hover{
-        box-shadow: 7px 7px 14px 0px #8A2BE2;
+        box-shadow: 7px 7px 14px 0px #8a2be2;
     }
 }
 
 #posts{
     @include column-style;
+    color: #000;
     float: left;
     width: 480px;
-    height: 720px;
-    position: relative;
-    word-wrap:normal;    
-}
-
-header{
-    width: 400px;
-    height: 30px;
+    padding: 10px;
 }
 
 h1 a{
-	text-decoration: none;
-    	color: #000;
-    		&:hover{
-    			//text-shadow: 0px 0px 7px rgba(255, 10, 10, 0.75);
-                @include highlight;
-    		}
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    &:hover{
+            @include highlight;
+        }
 }
 
 #post-date{
-    margin: 0 20px 5px 325px;
+    font-style: italic;
     font-weight: bold;
+    float: right;
+}
+
+
+#sidebar{
+    float: left;
+    clear: right;
+    width: 125px;
+    margin-top: 50px;
+    margin-left: 15px;
+    padding: 15px;
 }
 
 #menu{
     @include column-style;
-    float: right;
-    width: 120px;
-    height: 120px;
+    margin-bottom: 8px;
     ul{
-        list-style: $list-style;
-        text-align: $text-align;
-        padding: $padding;
-        font-size:16px;
+        list-style: none;
+        font-size: 16px;
         font-weight: bold;
-        line-height: $line-height;
-      }
+        text-align: left;
+        padding: 10px 15px;
+        line-height: 25px;
 
+    }
     li a{
-    	text-decoration: none;
-    	color: #000;
-    	&:hover{
-    			//text-shadow: 0px 0px 7px rgba(255, 10, 10, 0.75);
-                @include highlight;
-    		}
-    }  
+        color: #000;
+        text-decoration: none;
+        &:hover{
+            @include highlight;
+        }
+      
+    }
+   
 }
 
 #recent-posts{
     @include column-style;
-    float: right;
-    width: 120px;
-    height: 565px;
-    margin: 5px 0 0 0;
-     ul{
-        list-style: $list-style;
-        text-align: $text-align;
-        padding: $padding;
-        font-size:16px;
+    ul{
+        list-style: none;
+        font-size: 16px;
         font-weight: bold;
-        line-height: $line-height;
-      }
+        text-align: left;
+        padding: 0px 5px;
+        line-height: 25px;
 
-      li a{
-    	text-decoration: none;
-    	color: #000;
-    		&:hover{
-    			//text-shadow: 0px 0px 7px rgba(255, 10, 10, 0.75);
-                @include highlight;
-    		}
-    		
-    }  
+    }
+    li a{
+        color: #000;
+        text-decoration: none;
+        &:hover{
+            @include highlight;
+        }
+    }
+
+    
 }
 
 footer{
     @include column-style;
-    width: 618px;
+    clear: both;
+    float: none;
+    width: 480px;
     height: 10px;
-    float:none;
-    clear:both;
     font-weight: bold;
     text-align: center;
-    padding: 10px;
-
+    padding: 8px;
 }
-
